@@ -6,7 +6,8 @@
 #include "sort/sort.h"
 #include "list/list.h"
 #include "tree/tree.h"
-#include "fread.h"
+#include "regression/reg.h"
+#include "common.h"
 
 using std::vector;
 using std::cin;
@@ -57,8 +58,8 @@ void test_list(){
     head = nullptr;
     rev_rev_head = nullptr;
 }
-int main(int argc, char *argv[])
-{
+
+void test_tree(){
     Tnode * top = nullptr;
     
     vector<string> arr = read_file("D:\\work\\C\\text.txt");
@@ -67,6 +68,12 @@ int main(int argc, char *argv[])
     preOrderRecur(top);
     cout << endl;
     midOrderRecur(top);
+}
 
+int main(int argc, char *argv[])
+{
+    vector<int> arr = {1, 100, 4};
+
+    reverse_stack(arr);
     return 0;
 }

@@ -1,7 +1,7 @@
 
 #include <sstream>
 
-#include "fread.h"
+#include "common.h"
 
 using std::cout;
 using std::endl;
